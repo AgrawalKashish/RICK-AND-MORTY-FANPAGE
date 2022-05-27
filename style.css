@@ -21,6 +21,8 @@ header {
 }
 
 #grid {
+	border: 2px solid black;
+	height: 100%;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -194,18 +196,32 @@ nav a:focus {
 			rgba(0, 0, 0, 0)) 50 100%;
 }
 
-.character{
+.character {
 	background-color: #fdb1d7;
 }
-#button1{
+
+#button1 {
 	background-color: blue;
 	border: 1.5px solid blue;
 	border-radius: 6px;
 	font-size: 20px;
 }
-#input{
+
+#input {
 	background-color: azure;
 	border: 3px solid black;
 	border-radius: 6px;
 	font-size: 20px;
+}
+
+.grid-container2 {
+	display: grid;
+	column-gap: 20px;
+	grid-template-columns: auto auto auto auto;
+	justify-content: space-around;
+	background-color: rgb(18, 45, 92);
+}
+
+.grid-container2 {
+	color: white;
 }
