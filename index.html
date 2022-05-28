@@ -13,11 +13,11 @@
         <header>
             <nav>
                 <ul>
-                    <li style="margin-right: 10em; margin-top: .9em;"> <img src="rick.jpg"></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Character</a></li>
-                    <li><a href="#">Custom</a></li>
-                    <li style="background-color: #CA4246;
+                    <ul class="left">
+                    <li class="left1"> <img src="rick.jpg" ></li>
+                    </ul>
+                    <ul class="center">
+                    <li class="left2" style="background-color: #CA4246;
               background-image: linear-gradient(45deg,
                   #ce4f54 16.666%,
                   #ee6641 16.666%,
@@ -34,34 +34,40 @@
               background-clip: border-box;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-              animation: rainbow-text-simple-animation-rev 0.75s ease forwards;">
-                        <h3>RICK AND MORTY</h3>
+              animation: rainbow-text-simple-animation-rev 0.75s ease forwards; "> <p>RICK AND MORTY FAN PAGE<p>
                     </li>
+                </ul>
+                    <ul class="right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Character</a></li>
+                        <li><a href="#">Custom</a></li>
+                    </ul>
                 </ul>
             </nav>
         </header>
     </div>
-    <div>
+    <div style="margin-bottom:0">
         <img src="https://d.newsweek.com/en/full/1829970/ricka-nd-morty-still-season-5.jpg?w=1600&h=1200&q=88&f=6229be81ead8b4e2348b57a4be989799"
             style="width:100%; height:100%">
     </div>
 
-
-    <section class="character">
-        <div id="search_box">
-            <input id="input" type="variable" placeholder="Enter The Character"><i id="search"
-                class="fas fa-search"></i>
-        </div>
-        <div id="button">
-            <button id="button1">SEARCH</button>
-        </div>
-        <div class="container1">
-            <div id="grid">
-                <div class="title"></div>
-                <div class="img"></div>
+    <div style="margin-top: 0">
+        <section class="character">
+            <div id="search_box">
+                <input id="input" type="variable" placeholder="Enter The Character"><i id="search"
+                    class="fas fa-search"></i>
             </div>
-    </section>
-    <div style="background-color: rgb(252, 187, 102);border-radius: 5px;">
+            <div id="button">
+                <button id="button1">SEARCH</button>
+            </div>
+            <div class="container1">
+                <div id="grid">
+                    <div class="title"></div>
+                    <div class="img"></div>
+                </div>
+        </section>
+    </div>
+    <div style="background-color: rgb(252, 187, 102);border-radius: 5px;margin-top: 0px;">
         <section>
             <div>
                 <h1 style="text-align: center;">SADDEST</h1>
@@ -225,34 +231,7 @@
                     but
                     that is my two cents on the issue.” — Rick</li><br>
                 <li>"Sometimes science is more art than science.” — Rick</li><br>
-                <li>"If I let you make me nervous, then we cannot get schwifty.” — Rick</li><br>
-                <li>"Listen, Morty, I hate to break it to you, but what people call love is just a chemical reaction
-                    that
-                    compels animals to breed.” — Rick</li><br>
-                <li>"Don't move. Gonorrhea can't see us if we donot move. Wait! I was wrong! I was thinking of a T.
-                    rex.” —
-                    Rick</li><br>
-                <li>"Have fun with empowerment. It seems to make everyone that gets it really happy.” — Rick</li><br>
-                <li>"Listen, I'm not the nicest guy in the universe, because I am the smartest, and being nice is
-                    something
-                    stupid people do to hedge their bets.” — Rick</li><br>
-                <li>"I know that new situations can be intimidating. You are looking around and it is all scary and
-                    different, but you know, meeting them head-on, charging into them like a bull — that is how we grow
-                    as
-                    people.” — Rick</li><br>
-                <li>"You gotta do it for Grandpa, Morty. You gotta put these seeds inside your butt.” — Rick</li><br>
-                <li>Morty, I need your help on an adventure. Eh, need is a strong word. We need door stops, but a brick
-                    would work too.” — Rick</li><br>
-                <li>"I'm a scientist; because I invent, transform, create, and destroy for a living, and when I do not
-                    like
-                    something about the world, I change it.” — Pickle Rick</li><br>
-                <li>"He's not a hot girl. He can't just bail on his life and set up shop in someone else is.” — Beth
-                </li><br>
-                <li>"Honey, stop raising your father's cholesterol so you can take a hot funeral selfie.” — Beth</li>
-                <br>
-                <li>"So what if he's the devil, Rick? At least the devil has a job. At least he is active in the
-                    community.”
-                    — Summer</li><br>
+                <li>"If I let you make me nervous, then we cannot get schwifty.” — Rick</li><br><br>
             </ul>
         </div>
     </section>
@@ -352,7 +331,7 @@
                     image.innerHTML = `<img src="${data['result']['i']['image']}">`;
                     title.innerHTML = data['result']['0']['title'];
                     console.log(data['result']['i']['title']);
-                    image.style.backgroundImage = url(data['result']['i']['url']);
+                    image.style.backgroundImage = url(data['result']['i']['image']);
                     document.querySelector("#grid").appendChild(image);
                 }
 

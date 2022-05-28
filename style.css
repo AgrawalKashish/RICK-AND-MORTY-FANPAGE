@@ -1,9 +1,9 @@
 * {
+	margin: 0;
 	box-sizing: border-box;
 }
 
 .navbar {
-	max-width: 110em;
 	display: flex;
 	position: sticky;
 	top: 0;
@@ -21,12 +21,11 @@ header {
 }
 
 #grid {
-	border: 2px solid black;
 	height: 100%;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: end;
 	align-items: flex-start;
 }
 
@@ -40,6 +39,7 @@ nav a:focus {
 		margin-top: 0;
 		margin-bottom: 0%;
 		text-align: left;
+		width: 100%;
 	}
 
 	nav {
@@ -73,6 +73,73 @@ nav a:focus {
 		text-decoration: none;
 		color: whitesmoke;
 	}
+
+	.grid-container {
+		display: grid;
+		grid-template-rows: auto auto auto;
+		padding: 3px;
+		row-gap: 5px;
+	}
+
+	.grid-container>div {
+		text-align: center;
+		font-size: 10px;
+	}
+
+	.grid-item {
+		padding: 5px;
+	}
+
+	.card {
+		background-color: rgb(175, 175, 255);
+		text-align: left;
+		font-size: 10px;
+		border: 5px;
+		border-style: solid;
+		border-image:
+			linear-gradient(to bottom,
+				#ce4f54 16.666%,
+				#ee6641 16.666%,
+				#e66744 33.333%,
+				#f1944c 33.333%,
+				#ec914b 50%,
+				#bed868 50%,
+				#96aa53 66.666%,
+				#4c6baf 66.666%,
+				#54658b 83.333%,
+				#ff67eb 83.333%,
+				rgba(0, 0, 0, 0)) 50 100%;
+	}
+
+	.character {
+		background-color: #fdb1d7;
+	}
+
+	#button1 {
+		background-color: blue;
+		border: 1px solid blue;
+		border-radius: 6px;
+		font-size: 10px;
+	}
+
+	#input {
+		background-color: azure;
+		border: 3px solid black;
+		border-radius: 6px;
+		font-size: 20px;
+	}
+
+	.grid-container2 {
+		display: grid;
+		column-gap: 15px;
+		grid-template-columns: auto auto auto auto;
+		justify-content: space-around;
+		background-color: rgb(18, 45, 92);
+	}
+
+	.grid-container2 {
+		color: white;
+	}
 }
 
 @media (min-width: 481px) and (max-width: 999px) {
@@ -80,11 +147,38 @@ nav a:focus {
 	header {
 		margin-top: 0;
 		margin-bottom: 0%;
+		width: 100%;
+	}
+
+	.left {
+		float: left;
+		width: 75px;
+		height: 45px;
+	}
+
+	nav .left1 {
+		float: left;
+		margin-top: 20px;
+	}
+
+	.center{
+		text-align: center;
+	}
+
+	nav .left2{
+		float: none;
+		margin: 0 0 0 4em;
+		padding: 0 0 0 0;
+		font-weight: 400;
+	}
+
+	.right {
+		float: right;
 	}
 
 	nav {
 		background-color: rgb(18, 45, 92);
-		font-size: 1.4em;
+		font-size: 1em;
 		margin: 0;
 		position: -webkit-sticky;
 		position: sticky;
@@ -104,12 +198,79 @@ nav a:focus {
 
 	nav a {
 		display: inline-block;
-		padding: 1em;
+		padding: .8em;
 		text-decoration: none;
 		color: whitesmoke;
 
 	}
 
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		padding: 6px;
+		column-gap: 5px;
+		row-gap: 5px;
+	}
+
+	.grid-container>div {
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.grid-item {
+		padding: 10px;
+	}
+
+	.card {
+		background-color: rgb(175, 175, 255);
+		text-align: left;
+		font-size: 18px;
+		border: 5px;
+		border-style: solid;
+		border-image:
+			linear-gradient(to bottom,
+				#ce4f54 16.666%,
+				#ee6641 16.666%,
+				#e66744 33.333%,
+				#f1944c 33.333%,
+				#ec914b 50%,
+				#bed868 50%,
+				#96aa53 66.666%,
+				#4c6baf 66.666%,
+				#54658b 83.333%,
+				#ff67eb 83.333%,
+				rgba(0, 0, 0, 0)) 50 100%;
+	}
+
+	.character {
+		background-color: #fdb1d7;
+	}
+
+	#button1 {
+		background-color: blue;
+		border: 1.2px solid blue;
+		border-radius: 6px;
+		font-size: 15px;
+	}
+
+	#input {
+		background-color: azure;
+		border: 3px solid black;
+		border-radius: 6px;
+		font-size: 20px;
+	}
+
+	.grid-container2 {
+		display: grid;
+		column-gap: 15px;
+		grid-template-columns: auto auto auto auto;
+		justify-content: space-around;
+		background-color: rgb(18, 45, 92);
+	}
+
+	.grid-container2 {
+		color: white;
+	}
 }
 
 @media (min-width: 1000px) {
@@ -126,22 +287,47 @@ nav a:focus {
 
 	header,
 	nav {
+		width: 100%;
 		display: inline-block;
 	}
 
 	nav {
-		float: left;
 		font-size: 1.5em;
 		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
 	}
 
+	.left {
+		float: left;
+		width: 75px;
+		height: 45px;
+	}
+
+	nav .left1 {
+		float: left;
+		margin-top: 20px;
+	}
+
+	.center{
+		float: none;
+	}
+
+	nav .left2{
+		float: none;
+		margin: 0 0 0 8em;
+		padding: 0 0 0 0;
+		font-weight: 800;
+	}
+
+	.right {
+		float: right;
+	}
+
 	nav ul {
 		margin: 0;
 		display: inline;
 		padding-right: .15em;
-
 	}
 
 	nav ul li {
@@ -156,72 +342,70 @@ nav a:focus {
 		text-decoration: none;
 		color: whitesmoke;
 	}
-}
 
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		padding: 10px;
+	}
 
-.grid-container {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	padding: 10px;
-}
+	.grid-container>div {
+		text-align: center;
+		font-size: 20px;
+	}
 
-.grid-container>div {
-	text-align: center;
-	font-size: 20px;
-}
+	.grid-item {
+		padding: 13px;
+	}
 
-.grid-item {
-	padding: 13px;
-}
+	.card {
+		background-color: rgb(175, 175, 255);
+		text-align: left;
+		font-size: 25px;
+		border: 5px;
+		border-style: solid;
+		border-image:
+			linear-gradient(to bottom,
+				#ce4f54 16.666%,
+				#ee6641 16.666%,
+				#e66744 33.333%,
+				#f1944c 33.333%,
+				#ec914b 50%,
+				#bed868 50%,
+				#96aa53 66.666%,
+				#4c6baf 66.666%,
+				#54658b 83.333%,
+				#ff67eb 83.333%,
+				rgba(0, 0, 0, 0)) 50 100%;
+	}
 
-.card {
-	margin-top: 1em;
-	background-color: rgb(175, 175, 255);
-	text-align: left;
-	font-size: 25px;
-	border: 5px;
-	border-style: solid;
-	border-image:
-		linear-gradient(to bottom,
-			#ce4f54 16.666%,
-			#ee6641 16.666%,
-			#e66744 33.333%,
-			#f1944c 33.333%,
-			#ec914b 50%,
-			#bed868 50%,
-			#96aa53 66.666%,
-			#4c6baf 66.666%,
-			#54658b 83.333%,
-			#ff67eb 83.333%,
-			rgba(0, 0, 0, 0)) 50 100%;
-}
+	.character {
+		background-color: #fdb1d7;
+	}
 
-.character {
-	background-color: #fdb1d7;
-}
+	#button1 {
+		background-color: blue;
+		border: 1.5px solid blue;
+		border-radius: 6px;
+		font-size: 20px;
+	}
 
-#button1 {
-	background-color: blue;
-	border: 1.5px solid blue;
-	border-radius: 6px;
-	font-size: 20px;
-}
+	#input {
+		background-color: azure;
+		border: 3px solid black;
+		border-radius: 6px;
+		font-size: 20px;
+	}
 
-#input {
-	background-color: azure;
-	border: 3px solid black;
-	border-radius: 6px;
-	font-size: 20px;
-}
+	.grid-container2 {
+		display: grid;
+		column-gap: 20px;
+		grid-template-columns: auto auto auto auto;
+		justify-content: space-around;
+		background-color: rgb(18, 45, 92);
+	}
 
-.grid-container2 {
-	display: grid;
-	column-gap: 20px;
-	grid-template-columns: auto auto auto auto;
-	justify-content: space-around;
-	background-color: rgb(18, 45, 92);
-}
-
-.grid-container2 {
-	color: white;
+	.grid-container2 {
+		color: white;
+	}
 }
