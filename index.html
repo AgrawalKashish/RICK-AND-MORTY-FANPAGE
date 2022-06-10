@@ -9,15 +9,15 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar" id="home">
         <header>
             <nav>
                 <ul>
                     <ul class="left">
-                    <li class="left1"> <img src="rick.jpg" ></li>
+                        <li class="left1"> <img src="rick.jpg"></li>
                     </ul>
                     <ul class="center">
-                    <li class="left2" style="background-color: #CA4246;
+                        <li class="left2" style="background-color: #CA4246;
               background-image: linear-gradient(45deg,
                   #ce4f54 16.666%,
                   #ee6641 16.666%,
@@ -34,14 +34,20 @@
               background-clip: border-box;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-              animation: rainbow-text-simple-animation-rev 0.75s ease forwards; "> <p>RICK AND MORTY FAN PAGE<p>
-                    </li>
-                </ul>
-                    <ul class="right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Character</a></li>
-                        <li><a href="#">Custom</a></li>
+              animation: rainbow-text-simple-animation-rev 0.75s ease forwards; ">
+                            <p>RICK AND MORTY FAN PAGE
+                            <p>
+                        </li>
                     </ul>
+                    <label>
+                        <input class="checkbox" type="checkbox">
+                        <span class="menu"> <span class="hamburger"></span> </span>
+                        <ul class="right">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#char">Character</a></li>
+                            <li><a href="#cust">Custom</a></li>
+                        </ul>
+                    </label>
                 </ul>
             </nav>
         </header>
@@ -51,8 +57,8 @@
             style="width:100%; height:100%">
     </div>
 
-    <div style="margin-top: 0">
-        <section class="character">
+    <div style="margin-top: 0" class="section2">
+        <section class="character" id="char">
             <div id="search_box">
                 <input id="input" type="variable" placeholder="Enter The Character"><i id="search"
                     class="fas fa-search"></i>
@@ -62,45 +68,49 @@
             </div>
             <div class="container1">
                 <div id="grid">
-                    <div class="title"></div>
-                    <div class="img"></div>
+                    <div class="img">
+
+                    </div>
+
                 </div>
+
+            </div>
         </section>
     </div>
     <div style="background-color: rgb(252, 187, 102);border-radius: 5px;margin-top: 0px;">
-        <section>
+        <section id="cust">
             <div>
                 <h1 style="text-align: center;">SADDEST</h1>
                 <div class="grid-container">
                     <div class="grid-item">
                         <img src="https://s3.r29static.com/bin/entry/5a3/960xbm,70/1818635/image.jpg"
                             style="width: 80%;height:90%;"><br>
-                        "Edge of Tomorty: Rick Die Rickpeat"
+                        <a style="text-decoration: none; color: black"> "Edge of Tomorty: Rick Die Rickpeat"</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://images.squarespace-cdn.com/content/v1/5095c465e4b02d37bef48c0b/1558191681927-S0RE0MW7J9QRQVHUMNCE/Rick+and+Morty+Dead.jpg?format=1000w"
                             style="width: 80%;height:90%;"><br>
-                        "Rick Potion #9"
+                        <a style="text-decoration: none; color: black"> "Rick Potion #9"</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://i.ytimg.com/vi/u9ywWA4Ecrw/maxresdefault.jpg"
                             style="width: 80%;height:90%;"><br>
-                        "The Ricklantis Mixup"
+                        <a style="text-decoration: none; color: black">"The Ricklantis Mixup"</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://m.media-amazon.com/images/M/MV5BNjNiY2Y0NjYtMDk3Yi00MzE3LWFiMmItZjJkYTc4ZDA4MDBkXkEyXkFqcGdeQXVyNjg1NDgwOTg@._V1_.jpg"
                             style="width: 80%;height:90%;"><br>
-                        "The Rickshank Rickdemption"
+                        <a style="text-decoration: none; color: black"> "The Rickshank Rickdemption"</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://content.internetvideoarchive.com/content/hdphotos/12887/012887/012887_1440x1080_637262066297227809.jpg"
                             style="width: 80%;height:90%;"><br>
-                        "Summer Yells at Jerry"
+                        <a style="text-decoration: none; color: black">"Summer Yells at Jerry"</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://qph.cf2.quoracdn.net/main-qimg-ccc76ceb49399ac2338ac87e9cefbbcf-lq"
                             style="width: 80%;height:90%;"><br>
-                        "Meseeks and Destroy"
+                        <a style="text-decoration: none; color: black"> "Meseeks and Destroy"</a>
                     </div>
                 </div>
 
@@ -114,27 +124,30 @@
                     <div class="grid-item">
                         <img src="https://i.ytimg.com/vi/MjrWPQcL-A4/maxresdefault.jpg"
                             style="width: 80%;height:90%;"><br>
-                        The Ricklantis Mixup (S03E07)
+                        <a style="text-decoration: none; color: black">The Ricklantis Mixup (S03E07)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://m.media-amazon.com/images/M/MV5BNjNiY2Y0NjYtMDk3Yi00MzE3LWFiMmItZjJkYTc4ZDA4MDBkXkEyXkFqcGdeQXVyNjg1NDgwOTg@._V1_.jpg"
                             style="width: 80%;height:90%;"><br>
-                        The Rickshank Rickdemption (S03E01)
+                        <a style="text-decoration: none; color: black"> The Rickshank Rickdemption (S03E01)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://s18675.pcdn.co/wp-content/uploads/2020/05/ram_408.jpeg"
                             style="width: 80%;height:90%;"><br>
-                        The Vat Of Acid Episode (S04E08)
+                        <a style="text-decoration: none; color: black">The Vat Of Acid Episode (S04E08)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://m.media-amazon.com/images/M/MV5BZWRhYzZhZjMtMjQxMi00OWVkLWEzNjItMjE3ZmZjM2QwZWU2L2ltYWdlXkEyXkFqcGdeQXVyNDk3OTIwNTU@._V1_.jpg"
                             style="width: 80%;height:90%;"><br>
-                        Close Rick-Counters Of The Rick Kind (S01E10)
+                        <a style="text-decoration: none; color: black"> Close Rick-Counters Of The Rick Kind
+                            (S01E10)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://m.media-amazon.com/images/M/MV5BNjNiMGY0YTUtNTQ2ZC00NTMwLThlNWMtMmI3Y2I3ODZjMjcwXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
                             style="width: 80%;height:90%;"><br>
-                        The Wedding Squanchers (S02E10)
+                        <a style="text-decoration: none; color: black"
+                            href="https://www.google.com/search?q=The+Wedding+Squanchers+(S02E10)&oq=The+Wedding+Squanchers+(S02E10)&aqs=chrome.0.69i59.747j0j4&sourceid=chrome&ie=UTF-8">The
+                            Wedding Squanchers (S02E10)</a>
                     </div>
                 </div>
 
@@ -144,62 +157,62 @@
                     <div class="grid-item">
                         <img src="https://m.media-amazon.com/images/M/MV5BOWFjNzJhMjYtNTFlMi00MThlLWE4MDItYjg0ODYxZWZkNzZjXkEyXkFqcGdeQXVyNTkyMjE3NDU@._V1_.jpg"
                             style="width: 80%;height:90%;"><br>
-                        Total Rickall (S02E04)
+                        <a style="text-decoration: none; color: black">Total Rickall (S02E04)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://i.ytimg.com/vi/MjrWPQcL-A4/maxresdefault.jpg"
                             style="width: 80%;height:90%;"><br>
-                        The Ricklantis Mixup (S03E07)
+                        <a style="text-decoration: none; color: black">The Ricklantis Mixup (S03E07)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://m.media-amazon.com/images/M/MV5BNjNiY2Y0NjYtMDk3Yi00MzE3LWFiMmItZjJkYTc4ZDA4MDBkXkEyXkFqcGdeQXVyNjg1NDgwOTg@._V1_.jpg"
                             style="width: 80%;height:90%;"><br>
-                        The Rickshank Rickdemption (S03E01)
+                        <a style="text-decoration: none; color: black">The Rickshank Rickdemption (S03E01)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://s18675.pcdn.co/wp-content/uploads/2020/05/ram_408.jpeg"
                             style="width: 80%;height:90%;"><br>
-                        The Vat Of Acid Episode (S04E08)
+                        <a style="text-decoration: none; color: black">The Vat Of Acid Episode (S04E08)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://m.media-amazon.com/images/M/MV5BZWRhYzZhZjMtMjQxMi00OWVkLWEzNjItMjE3ZmZjM2QwZWU2L2ltYWdlXkEyXkFqcGdeQXVyNDk3OTIwNTU@._V1_.jpg"
                             style="width: 80%;height:90%;"><br>
-                        Close Rick-Counters Of The Rick Kind (S01E10)
+                        <a style="text-decoration: none; color: black">Close Rick-Counters Of The Rick Kind (S01E10)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://m.media-amazon.com/images/M/MV5BNjNiMGY0YTUtNTQ2ZC00NTMwLThlNWMtMmI3Y2I3ODZjMjcwXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
                             style="width: 80%;height:90%;"><br>
-                        The Wedding Squanchers (S02E10)
+                        <a style="text-decoration: none; color: black">The Wedding Squanchers (S02E10)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://s18675.pcdn.co/wp-content/uploads/2019/08/rick_and_morty_s02e06.jpg"
                             style="width: 80%;height:90%;"><br>
-                        The Ricks Must Be Crazy (S02E06)
+                        <a style="text-decoration: none; color: black">The Ricks Must Be Crazy (S02E06)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://s18675.pcdn.co/wp-content/uploads/2019/09/picklerick.jpeg"
                             style="width: 80%;height:90%;"><br>
-                        Pickle Rick (S03E03)
+                        <a style="text-decoration: none; color: black">Pickle Rick (S03E03)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://m.media-amazon.com/images/M/MV5BMTc1NjdmMDMtNWRkNy00MWMzLTg5MTMtZmM1ODIwMWIxZWMwXkEyXkFqcGdeQXVyMTE5MjIzMjMx._V1_FMjpg_UX1000_.jpg"
                             style="width: 80%;height:90%;"><br>
-                        Star Mort: Rickturn Of The Jerri (S04E10)
+                        <a style="text-decoration: none; color: black">Star Mort: Rickturn Of The Jerri (S04E10)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://images.squarespace-cdn.com/content/v1/5095c465e4b02d37bef48c0b/1558191681927-S0RE0MW7J9QRQVHUMNCE/Rick+and+Morty+Dead.jpg?format=1000w"
                             style="width: 80%;height:90%;"><br>
-                        Rick Potion #9 (S01E06)
+                        <a style="text-decoration: none; color: black"> Rick Potion #9 (S01E06)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://www.indiewire.com/wp-content/uploads/2017/09/rick-and-morty-mortys-mind-blowers.png"
                             style="width: 80%;height:90%;"><br>
-                        Morty's Mind Blowers (S03E08)
+                        <a style="text-decoration: none; color: black">Morty's Mind Blowers (S03E08)</a>
                     </div>
                     <div class="grid-item">
                         <img src="https://www.indiewire.com/wp-content/uploads/2019/11/Rick-and-Morty-Season-4-Episode-2.jpg"
                             style="width: 80%;height:90%;"><br>
-                        The Old Man And The Seat (S04E02)
+                        <a style="text-decoration: none; color: black">The Old Man And The Seat (S04E02)</a>
                     </div>
                 </div>
             </div>
@@ -284,16 +297,16 @@
         </div>
         <div class="grid-container2">
             <div class="grid-item">
-                <a style="text-decoration: none;color: whitesmoke;text-align: center;" href="http://">Seasons</a>
+                <a style="text-decoration: none;color: whitesmoke;text-align: center;;" href="http://">Seasons</a>
             </div>
             <div class="grid-item">
-                <a style="text-decoration: none;color: whitesmoke;text-align: center;" href="http://">More</a>
+                <a style="text-decoration: none;color: whitesmoke;text-align: center;;" href="http://">More</a>
             </div>
             <div class="grid-item">
-                <a style="text-decoration: none;color: whitesmoke;text-align: center;" href="http://">Message</a>
+                <a style="text-decoration: none;color: whitesmoke;text-align: center;;" href="http://">Message</a>
             </div>
             <div class="grid-item">
-                <a style="text-decoration: none;color: whitesmoke;text-align: center;" href="http://">Youtube</a>
+                <a style="text-decoration: none;color: whitesmoke;text-align: center;;" href="http://">Youtube</a>
             </div>
         </div>
     </footer>
@@ -304,11 +317,10 @@
         if (event.key == "Enter")
             apiRequest();
     });
-    document.querySelector("#search").addEventListener("click", (event) => {
+    document.querySelector("#search").addEventListener("Onclick", (event) => {
         apiRequest();
     });
     var inputvalue = document.querySelector('#input');
-    var title = document.querySelector('.title');
     apiRequest = () => {
         document.querySelector("#grid").style.display = "block";
 
@@ -322,17 +334,16 @@
             })
             .then(data => {
                 console.log(data);
-                console.log(data.result[0].image);
+                console.log(data.results[0].image);
 
-                let x = data.result.length;
+
+                let x = data.results.length;
                 for (let i = 0; i < x; i++) {
-                    let image = document.createElement("div");
-                    image.className = "img";
-                    image.innerHTML = `<img src="${data['result']['i']['image']}">`;
-                    title.innerHTML = data['result']['0']['title'];
-                    console.log(data['result']['i']['title']);
-                    image.style.backgroundImage = url(data['result']['i']['image']);
-                    document.querySelector("#grid").appendChild(image);
+                    // const images = document.createElement("div");
+                    // images.classList = "img";
+                    // images.innerHTML = `<img src="${data['results'][0]['image']}">`;
+                    document.getElementById('#grid').style.backgroundImage = "url('" + data.results[0].image + "')";
+                    document.getElementById("grid").src =data.results[0].image ;
                 }
 
             })
