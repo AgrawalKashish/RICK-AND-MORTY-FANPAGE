@@ -64,7 +64,7 @@
                     class="fas fa-search"></i>
             </div>
             <div id="button">
-                <button id="button1">SEARCH</button>
+                <button id="button1" value="Search" >SEARCH</button>
             </div>
             <div class="container1">
                 <div id="grid">
@@ -317,7 +317,7 @@
         if (event.key == "Enter")
             apiRequest();
     });
-    document.querySelector("#search").addEventListener("Onclick", (event) => {
+    document.querySelector("#button1").addEventListener("click", (event) => {
         apiRequest();
     });
     var inputvalue = document.querySelector('#input');
@@ -337,14 +337,13 @@
                 console.log(data.results[0].image);
 
 
-                let x = data.results.length;
-                for (let i = 0; i < x; i++) {
+               
                     // const images = document.createElement("div");
                     // images.classList = "img";
                     // images.innerHTML = `<img src="${data['results'][0]['image']}">`;
                     document.getElementById('#grid').style.backgroundImage = "url('" + data.results[0].image + "')";
-                    document.getElementById("grid").src =data.results[0].image ;
-                }
+                    document.getElementById("grid").src = data.results[0].image;
+               
 
             })
             .catch(error => console.log(error));
