@@ -260,6 +260,7 @@ nav a:focus {
 
 	.grid-container2 {
 		color: white;
+		text-align: center;
 	}
 
 	.modal {
@@ -451,6 +452,7 @@ nav a:focus {
 
 	.grid-container2 {
 		color: white;
+		text-align: center;
 	}
 
 	.modal {
@@ -651,8 +653,12 @@ nav a:focus {
 
 	.grid-container2 {
 		color: white;
+		text-align: center;
 	}
 
+	.grid-item2 {
+		padding: 8px;
+	}
 
 
 	.modal {
